@@ -13,7 +13,7 @@ struct OnboardingView: View {
     
     var body: some View {
         if showMainApp {
-            AuthenticationView()
+            MainAppCoordinator()
         } else {
             TabView(selection: $currentPage) {
                 OnboardingScreen1(
